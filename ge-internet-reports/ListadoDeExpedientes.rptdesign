@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.15" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.2.2.r222_v20071226 Build &lt;2.2.2.v20080227-1131></property>
+    <property name="units">in</property>
+    <property name="comments">Copyright (c) 2007 &lt;&lt;Your Company Name here>></property>
+    <html-property name="description">Creates a blank report with no predefined content.</html-property>
+    <text-property name="displayName">Blank Report</text-property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <parameters>
+        <scalar-parameter name="param_cuij" id="1765">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="paramType">simple</property>
+            <property name="concealValue">false</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_loc_id" id="2061">
+            <property name="valueType">static</property>
+            <property name="dataType">integer</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_org_id" id="2062">
+            <property name="valueType">static</property>
+            <property name="dataType">integer</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_nro_exp" id="2256">
+            <property name="valueType">static</property>
+            <property name="dataType">integer</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_anio_exp" id="2257">
+            <property name="valueType">static</property>
+            <property name="dataType">integer</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_id_profesional" id="4375">
+            <property name="valueType">static</property>
+            <property name="dataType">integer</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">true</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_bis" id="4376">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_sufijo" id="4377">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_excluirArchivados" id="4547">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_diasNovedades" id="4548">
+            <property name="valueType">static</property>
+            <property name="dataType">integer</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_fechaActual" id="4566">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_nombLoc" id="4606">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_nombOrg" id="4608">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_nombMagistrado" id="4616">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_fecNotFirmaDigDesde" id="4620">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="param_fecNotFirmaDigHasta" id="4621">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="46">
+            <property name="odaDriverClass">oracle.jdbc.driver.OracleDriver</property>
+            <property name="odaURL">jdbc:oracle:thin:@192.168.0.9:1521:gedb112</property>
+            <property name="odaUser">GE_INTERNET</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">Z2VfaW50ZXJuZXQ=</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="ExpedientesDS" id="4374">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">ORG_NOMBRE</property>
+                    <property name="displayName">ORG_NOMBRE</property>
+                </structure>
+                <structure>
+                    <property name="columnName">NRO_NUMERO</property>
+                    <property name="displayName">NRO_NUMERO</property>
+                </structure>
+                <structure>
+                    <property name="columnName">EXP_CARATULA</property>
+                    <property name="displayName">EXP_CARATULA</property>
+                </structure>
+                <structure>
+                    <property name="columnName">ESTADO</property>
+                    <property name="displayName">ESTADO</property>
+                </structure>
+                <structure>
+                    <property name="columnName">EXP_FECHA_INICIO</property>
+                    <property name="displayName">EXP_FECHA_INICIO</property>
+                </structure>
+                <structure>
+                    <property name="columnName">EXP_ID</property>
+                    <property name="displayName">EXP_ID</property>
+                </structure>
+                <structure>
+                    <property name="columnName">ORG_ID</property>
+                    <property name="displayName">ORG_ID</property>
+                </structure>
+                <structure>
+                    <property name="columnName">EXP_CUIJ</property>
+                    <property name="displayName">EXP_CUIJ</property>
+                </structure>
+                <structure>
+                    <property name="columnName">EXP_SUFIJO</property>
+                    <property name="displayName">EXP_SUFIJO</property>
+                </structure>
+                <structure>
+                    <property name="columnName">NRO_ANIO</property>
+                    <property name="displayName">NRO_ANIO</property>
+                </structure>
+                <structure>
+                    <property name="columnName">NRO_BIS</property>
+                    <property name="displayName">NRO_BIS</property>
+                </structure>
+                <structure>
+                    <property name="columnName">EXPEDIENTE</property>
+                    <property name="displayName">EXPEDIENTE</property>
+                </structure>
+                <structure>
+                    <property name="columnName">FECHA_ACTUALIZACION</property>
+                    <property name="displayName">FECHA_ACTUALIZACION</property>
+                </structure>
+                <structure>
+                    <property name="columnName">EXP_FECHA_INICIO_S</property>
+                    <property name="displayName">EXP_FECHA_INICIO_S</property>
+                </structure>
+                <structure>
+                    <property name="columnName">LOC_DESCR</property>
+                    <property name="displayName">LOC_DESCR</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">ORG_NOMBRE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">NRO_NUMERO</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">EXP_CARATULA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">ESTADO</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">EXP_FECHA_INICIO</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">EXP_ID</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">ORG_ID</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">EXP_CUIJ</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">EXP_SUFIJO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">NRO_ANIO</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">NRO_BIS</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">EXPEDIENTE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">FECHA_ACTUALIZACION</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">EXP_FECHA_INICIO_S</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">LOC_DESCR</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <method name="beforeOpen"><![CDATA[var where = " ";
+
+
+if (params["param_cuij"].value ) {
+	where += " AND Expediente.EXP_CUIJ = '" +  params["param_cuij"].value+"'";
+}
+
+if (params["param_org_id"].value ) {
+	where += " AND Organismo.ORG_ID = " +  params["param_org_id"].value;
+}
+if (params["param_loc_id"].value) {
+	where += " AND ExpNumero.LOC_ID = " +  params["param_loc_id"].value;
+}
+
+if (params["param_id_profesional"].value ) {
+    if (params["param_id_profesional"].value != -1)
+	where += " and Representante.PRO_ID =  "+  params["param_id_profesional"].value  ;
+}
+
+if (params["param_nro_exp"].value ) {
+	where += " and ExpNumero.NRO_NUMERO = "+  params["param_nro_exp"].value  ;
+}
+
+if (params["param_anio_exp"].value ) {
+	where += " and ExpNumero.NRO_ANIO = "+  params["param_anio_exp"].value  ;
+}
+
+if (params["param_bis"].value ) {
+	where += " and ExpNumero.NRO_BIS = '"+  params["param_bis"].value+"'"  ;
+}
+
+if (params["param_sufijo"].value ) {
+	where += " and Expediente.EXP_SUFIJO = '"+  params["param_sufijo"].value+"'"  ;
+}
+
+if (params["param_excluirArchivados"].value ) {
+	where += " AND (Expediente.EXP_UBICACION IS NULL OR NOT Expediente.EXP_UBICACION LIKE '"+params["param_excluirArchivados"].value+"%')";
+}
+
+if (params["param_diasNovedades"].value) {
+	where += " AND TRUNC(Expediente.FECHA_ACTUALIZACION) >= current_date -"+params["param_diasNovedades"].value;
+}
+
+if (params["param_fecNotFirmaDigDesde"].value && params["param_fecNotFirmaDigHasta"].value) {
+    where += " AND TRUNC(ACTUACION.ACT_FECFIR) BETWEEN '"+params["param_fecNotFirmaDigDesde"].value
+    		+"' AND '"+params["param_fecNotFirmaDigHasta"].value
+    		+ "' AND ACTUACION.ACT_TIPO=3 AND ACTUACION.ACT_TIPO_FIRMA=1";
+} else if (params["param_fecNotFirmaDigDesde"].value && params["param_fecNotFirmaDigHasta"].value == '') {
+	where += " AND TRUNC(ACTUACION.ACT_FECFIR) >= '"+params["param_fecNotFirmaDigDesde"].value
+    		+ "' AND ACTUACION.ACT_TIPO=3 AND ACTUACION.ACT_TIPO_FIRMA=1";
+} else if (params["param_fecNotFirmaDigDesde"].value == '' && params["param_fecNotFirmaDigHasta"].value) {
+	where += " AND TRUNC(ACTUACION.ACT_FECFIR) <= '"+params["param_fecNotFirmaDigHasta"].value
+    		+ "' AND ACTUACION.ACT_TIPO=3 AND ACTUACION.ACT_TIPO_FIRMA=1";
+}
+
+where += " ORDER BY Expediente.EXP_CUIJ ASC"
+if (where != ""){
+	this.queryText += where;
+}
+Packages.java.lang.System.out.println("queryText: " + queryText);]]></method>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">ORG_NOMBRE</property>
+                    <property name="nativeName">ORG_NOMBRE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">NRO_NUMERO</property>
+                    <property name="nativeName">NRO_NUMERO</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">EXP_CARATULA</property>
+                    <property name="nativeName">EXP_CARATULA</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">ESTADO</property>
+                    <property name="nativeName">ESTADO</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">EXP_FECHA_INICIO</property>
+                    <property name="nativeName">EXP_FECHA_INICIO</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">EXP_ID</property>
+                    <property name="nativeName">EXP_ID</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">ORG_ID</property>
+                    <property name="nativeName">ORG_ID</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">EXP_CUIJ</property>
+                    <property name="nativeName">EXP_CUIJ</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">EXP_SUFIJO</property>
+                    <property name="nativeName">EXP_SUFIJO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">NRO_ANIO</property>
+                    <property name="nativeName">NRO_ANIO</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">NRO_BIS</property>
+                    <property name="nativeName">NRO_BIS</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">EXPEDIENTE</property>
+                    <property name="nativeName">EXPEDIENTE</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">FECHA_ACTUALIZACION</property>
+                    <property name="nativeName">FECHA_ACTUALIZACION</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">EXP_FECHA_INICIO_S</property>
+                    <property name="nativeName">EXP_FECHA_INICIO_S</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">LOC_DESCR</property>
+                    <property name="nativeName">LOC_DESCR</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <property name="queryText">SELECT DISTINCT
+       Organismo.ORG_NOMBRE,
+       ExpNumero.NRO_NUMERO,
+       ExpNumero.EXP_CARATULA,
+       ExpNumero.ESTADO,
+       CASE
+           WHEN TO_CHAR(Expediente.EXP_FECHA_INICIO,'DD/MM/YYYY') = '01/01/1600' THEN
+               TO_DATE(NULL,'DD/MM/YYYY')
+           ELSE
+               Expediente.EXP_FECHA_INICIO
+       END AS EXP_FECHA_INICIO,
+       Expediente.EXP_ID,
+       Expediente.ORG_ID,
+       Expediente.EXP_CUIJ,
+       Expediente.EXP_SUFIJO,
+       ExpNumero.NRO_ANIO,
+       ExpNumero.NRO_BIS,
+       '' AS EXPEDIENTE,
+       to_char(EXPEDIENTE.FECHA_ACTUALIZACION,'dd/MM/yyyy') as FECHA_ACTUALIZACION,
+       to_char(EXP_FECHA_INICIO,'dd/MM/yyyy') as EXP_FECHA_INICIO_S,
+       loc.loc_descr
+FROM Expediente
+INNER JOIN Organismo ON (Organismo.ORG_ID = Expediente.ORG_ID AND Organismo.ESTADO = 0 AND Organismo.ORG_VISIBLE = 1)
+INNER JOIN EXP_NUMERO ExpNumero ON (Expediente.EXP_ID = ExpNumero.EXP_ID AND Organismo.ORG_ID = ExpNumero.ORG_ID)
+LEFT JOIN LOCALIDAD loc ON (Expediente.LOC_ID = loc.LOC_ID and loc.ESTADO = 0 and loc.LOC_VISIBLE = 1 )
+LEFT JOIN COMPETENCIA com ON (Organismo.COM_ID = com.COM_ID AND com.ESTADO = 0 AND com.COM_VISIBLE = 1)
+LEFT JOIN Representante ON (Representante.EXP_ID = Expediente.EXP_ID AND Representante.ESTADO = 0) -- req 2630
+LEFT JOIN Actuacion ON (Actuacion.EXP_ID = Expediente.EXP_ID AND Actuacion.ESTADO = 0) -- req 1012
+INNER JOIN VISIBILIDAD_ORG_IURIX_IOL vis ON (Expediente.ORG_ID = vis.ORG_ID)
+WHERE Expediente.ESTADO = 0
+AND Expediente.EXP_VISIBLE = 'S'
+AND vis.ESTADO = 0</property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="ProfesionalDS" id="4568">
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">REP_MATRICULA</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">REP_NOMBRE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">param_proId</property>
+                    <property name="paramName">param_id_profesional</property>
+                    <property name="dataType">integer</property>
+                    <property name="position">1</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">REP_MATRICULA</property>
+                    <property name="nativeName">REP_MATRICULA</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">REP_NOMBRE</property>
+                    <property name="nativeName">REP_NOMBRE</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="queryText">SELECT DISTINCT REP_MATRICULA,REP_NOMBRE FROM REPRESENTANTE
+WHERE PRO_ID = ?</property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="crosstab-cell" id="4">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">us-legal</property>
+            <property name="orientation">portrait</property>
+            <property name="leftMargin">3cm</property>
+            <property name="bottomMargin">1.5cm</property>
+            <property name="rightMargin">1.5cm</property>
+            <property name="headerHeight">0.5in</property>
+            <property name="footerHeight">0.5in</property>
+            <page-header>
+                <grid id="1629">
+                    <property name="marginTop">0pt</property>
+                    <property name="textAlign">center</property>
+                    <property name="width">100%</property>
+                    <column id="1630"/>
+                    <row id="1770">
+                        <cell id="1771">
+                            <label id="1411">
+                                <property name="fontFamily">"Arial"</property>
+                                <property name="fontSize">12pt</property>
+                                <property name="fontWeight">bold</property>
+                                <property name="textAlign">center</property>
+                                <text-property name="text">PODER JUDICIAL DE LA PROVINCIA DE SANTA FE</text-property>
+                            </label>
+                        </cell>
+                    </row>
+                    <row id="2284">
+                        <cell id="2285">
+                            <text id="4550">
+                                <property name="contentType">auto</property>
+                            </text>
+                        </cell>
+                    </row>
+                    <row id="4285">
+                        <cell id="4354">
+                            <property name="colSpan">1</property>
+                            <property name="rowSpan">1</property>
+                            <property name="paddingTop">1pt</property>
+                            <text id="4373">
+                                <property name="fontFamily">"Arial"</property>
+                                <property name="fontSize">14pt</property>
+                                <property name="fontWeight">bold</property>
+                                <property name="contentType">auto</property>
+                                <text-property name="content"><![CDATA[Listado de Expedientes]]></text-property>
+                            </text>
+                        </cell>
+                    </row>
+                    <row id="4287">
+                        <property name="fontFamily">"Arial"</property>
+                        <cell id="4355">
+                            <property name="colSpan">1</property>
+                            <property name="rowSpan">1</property>
+                            <property name="paddingTop">1pt</property>
+                            <text id="4549">
+                                <property name="fontFamily">"Arial"</property>
+                                <property name="textAlign">left</property>
+                                <property name="contentType">html</property>
+                            </text>
+                        </cell>
+                    </row>
+                    <row id="4559">
+                        <property name="fontFamily">"Arial"</property>
+                        <cell id="4560">
+                            <property name="paddingTop">1pt</property>
+                            <text id="4565">
+                                <property name="fontWeight">bold</property>
+                                <property name="textAlign">left</property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<VALUE-OF>'RESULTADO DE LA BÚSQUEDA DE EXPEDIENTES al '+ params["param_fechaActual"]</VALUE-OF>]]></text-property>
+                            </text>
+                        </cell>
+                    </row>
+                    <row id="4561">
+                        <property name="height">0.4479166667in</property>
+                        <property name="fontFamily">"Arial"</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <cell id="4562">
+                            <property name="paddingTop">1pt</property>
+                            <text id="4567">
+                                <property name="fontStyle">italic</property>
+                                <property name="textAlign">left</property>
+                                <property name="contentType">auto</property>
+                                <text-property name="content"><![CDATA[Los datos visualizados son meramente informativos, no reemplazando a los obrantes en el expediente, ni constituyen notificación alguna.]]></text-property>
+                            </text>
+                        </cell>
+                    </row>
+                    <row id="4563">
+                        <property name="height">0.302in</property>
+                        <property name="fontFamily">"Arial"</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr">if (params["param_nombMagistrado"].value != null)
+true
+else false</expression>
+                            </structure>
+                        </list-property>
+                        <cell id="4564">
+                            <property name="paddingTop">1pt</property>
+                            <text id="4569">
+                                <property name="textAlign">left</property>
+                                <property name="dataSet">ProfesionalDS</property>
+                                <list-property name="boundDataColumns">
+                                    <structure>
+                                        <property name="name">REP_MATRICULA</property>
+                                        <expression name="expression">dataSetRow["REP_MATRICULA"]</expression>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="name">REP_NOMBRE</property>
+                                        <expression name="expression">dataSetRow["REP_NOMBRE"]</expression>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<VALUE-OF>function mostrarProf(){
+var descr='Profesional: ';
+if(row["REP_MATRICULA"]!=null && row["REP_NOMBRE"]!=null){
+descr+=row["REP_MATRICULA"]+' - '+row["REP_NOMBRE"];
+}else{
+     if(row["REP_MATRICULA"]!=null){
+         descr+=row["REP_MATRICULA"];
+     }else{
+		if(row["REP_NOMBRE"]!=null){
+           descr+=row["REP_NOMBRE"];
+        }
+
+     }
+
+}
+return descr;
+}mostrarProf();</VALUE-OF>]]></text-property>
+                            </text>
+                        </cell>
+                    </row>
+                    <row id="4617">
+                        <property name="height">0.302in</property>
+                        <property name="fontFamily">"Arial"</property>
+                        <property name="borderBottomColor">#000000</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">thin</property>
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr">if (params["param_nombMagistrado"].value != null)
+false
+else true</expression>
+                            </structure>
+                        </list-property>
+                        <cell id="4618">
+                            <property name="paddingTop">1pt</property>
+                            <text id="4619">
+                                <property name="textAlign">left</property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<VALUE-OF>"Magistrado: " +params["param_nombMagistrado"]</VALUE-OF>]]></text-property>
+                            </text>
+                        </cell>
+                    </row>
+                    <row id="4576">
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr">if(params["param_nombLoc"].value==null)
+true
+else
+false</expression>
+                            </structure>
+                        </list-property>
+                        <cell id="4577">
+                            <property name="paddingTop">1pt</property>
+                            <text id="4607">
+                                <property name="fontFamily">"Arial"</property>
+                                <property name="textAlign">left</property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<VALUE-OF>'Localidad: '+params["param_nombLoc"]</VALUE-OF>]]></text-property>
+                            </text>
+                        </cell>
+                    </row>
+                    <row id="4578">
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr">if(params["param_nombOrg"].value==null)
+true
+else
+false</expression>
+                            </structure>
+                        </list-property>
+                        <cell id="4579">
+                            <property name="paddingTop">1pt</property>
+                            <text id="4609">
+                                <property name="fontFamily">"Arial"</property>
+                                <property name="textAlign">left</property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<VALUE-OF>'Organismo: '+params["param_nombOrg"]</VALUE-OF>]]></text-property>
+                            </text>
+                        </cell>
+                    </row>
+                    <row id="4580">
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr">if(params["param_cuij"].value==null &amp;&amp; params["param_sufijo"].value==null)
+true
+else
+false</expression>
+                            </structure>
+                        </list-property>
+                        <cell id="4581">
+                            <property name="paddingTop">1pt</property>
+                            <grid id="4590">
+                                <property name="width">100%</property>
+                                <column id="4591"/>
+                                <column id="4592"/>
+                                <row id="4593">
+                                    <cell id="4594">
+                                        <text id="4610">
+                                            <property name="fontFamily">"Arial"</property>
+                                            <property name="textAlign">left</property>
+                                            <list-property name="visibility">
+                                                <structure>
+                                                    <property name="format">all</property>
+                                                    <expression name="valueExpr">if(params["param_cuij"].value==null)
+true
+else
+false</expression>
+                                                </structure>
+                                            </list-property>
+                                            <property name="contentType">html</property>
+                                            <text-property name="content"><![CDATA[<VALUE-OF>'CUIJ: '+params["param_cuij"]</VALUE-OF>]]></text-property>
+                                        </text>
+                                    </cell>
+                                    <cell id="4595">
+                                        <text id="4611">
+                                            <property name="fontFamily">"Arial"</property>
+                                            <property name="textAlign">left</property>
+                                            <list-property name="visibility">
+                                                <structure>
+                                                    <property name="format">all</property>
+                                                    <expression name="valueExpr">if(params["param_sufijo"].value==null)
+true
+else
+false</expression>
+                                                </structure>
+                                            </list-property>
+                                            <property name="contentType">html</property>
+                                            <text-property name="content"><![CDATA[<VALUE-OF>'Sufijo: '+params["param_sufijo"]</VALUE-OF>]]></text-property>
+                                        </text>
+                                    </cell>
+                                </row>
+                            </grid>
+                        </cell>
+                    </row>
+                    <row id="4582">
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr">if(params["param_nro_exp"].value==null &amp;&amp; params["param_anio_exp"].value==null &amp;&amp; params["param_bis"].value==null  )
+true
+else
+false</expression>
+                            </structure>
+                        </list-property>
+                        <cell id="4583">
+                            <property name="paddingTop">1pt</property>
+                            <grid id="4596">
+                                <property name="width">100%</property>
+                                <column id="4597"/>
+                                <column id="4598"/>
+                                <row id="4599">
+                                    <cell id="4600">
+                                        <text id="4613">
+                                            <property name="fontFamily">"Arial"</property>
+                                            <property name="textAlign">left</property>
+                                            <list-property name="visibility">
+                                                <structure>
+                                                    <property name="format">all</property>
+                                                    <expression name="valueExpr">if(params["param_nro_exp"].value==null &amp;&amp; params["param_anio_exp"].value==null  )
+true
+else
+false</expression>
+                                                </structure>
+                                            </list-property>
+                                            <property name="contentType">html</property>
+                                            <text-property name="content"><![CDATA[<VALUE-OF>if(params["param_nro_exp"].value!=null && params["param_anio_exp"].value!=null){
+'Nro. Expte.: '+params["param_nro_exp"]+' / '+params["param_anio_exp"];
+}else{
+if(params["param_nro_exp"].value!=null){
+'Nro. Expte.: '+params["param_nro_exp"];
+}else{
+'Nro. Expte.:  / '+params["param_anio_exp"];
+}
+}</VALUE-OF>]]></text-property>
+                                        </text>
+                                    </cell>
+                                    <cell id="4601">
+                                        <text id="4612">
+                                            <property name="fontFamily">"Arial"</property>
+                                            <property name="textAlign">left</property>
+                                            <list-property name="visibility">
+                                                <structure>
+                                                    <property name="format">all</property>
+                                                    <expression name="valueExpr">if(params["param_bis"].value==null)
+true
+else
+false</expression>
+                                                </structure>
+                                            </list-property>
+                                            <property name="contentType">html</property>
+                                            <text-property name="content"><![CDATA[<VALUE-OF>'Bis: '+params["param_bis"]</VALUE-OF>]]></text-property>
+                                        </text>
+                                    </cell>
+                                </row>
+                            </grid>
+                        </cell>
+                    </row>
+                    <row id="4602">
+                        <cell id="4603">
+                            <property name="paddingTop">1pt</property>
+                            <text id="4614">
+                                <property name="fontFamily">"Arial"</property>
+                                <property name="textAlign">left</property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<VALUE-OF>if (params["param_excluirArchivados"].value) {
+'Excluir Expedientes Archivados: SI';
+}else{
+'Excluir Expedi Archivados: NO'
+}</VALUE-OF>]]></text-property>
+                            </text>
+                        </cell>
+                    </row>
+                    <row id="4604">
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr">if(params["param_diasNovedades"].value==null || params["param_diasNovedades"].value==0)
+true
+else
+false</expression>
+                            </structure>
+                        </list-property>
+                        <cell id="4605">
+                            <property name="paddingTop">1pt</property>
+                            <text id="4615">
+                                <property name="fontFamily">"Arial"</property>
+                                <property name="textAlign">left</property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<VALUE-OF>if(params["param_diasNovedades"]!=null){
+            'Expedientes con novedades en los últimos '+ params["param_diasNovedades"]+' días';  
+           }</VALUE-OF>]]></text-property>
+                            </text>
+                        </cell>
+                    </row>
+                    <row id="4622">
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr">if ((params["param_fecNotFirmaDigDesde"] != '') || (params["param_fecNotFirmaDigHasta"] != '')) {
+false
+} else {
+true
+}</expression>
+                            </structure>
+                        </list-property>
+                        <cell id="4623">
+                            <property name="paddingTop">1pt</property>
+                            <text id="4624">
+                                <property name="fontFamily">"Arial"</property>
+                                <property name="marginTop">0pt</property>
+                                <property name="paddingTop">1pt</property>
+                                <property name="textAlign">left</property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<VALUE-OF>if ((params["param_fecNotFirmaDigDesde"] != '') && (params["param_fecNotFirmaDigHasta"] != '')) {
+'Expedientes con notificación con firma digital desde: ' +params["param_fecNotFirmaDigDesde"]+' hasta: '+params["param_fecNotFirmaDigHasta"];
+}else if (params["param_fecNotFirmaDigDesde"] && params["param_fecNotFirmaDigHasta"] == '') {
+	'Expedientes con notificación con firma digital desde: ' +params["param_fecNotFirmaDigDesde"];
+} else if (params["param_fecNotFirmaDigDesde"].value == '' && params["param_fecNotFirmaDigHasta"]) {
+	'Expedientes con notificación con firma digital hasta: ' +params["param_fecNotFirmaDigHasta"];
+}
+</VALUE-OF>]]></text-property>
+                            </text>
+                        </cell>
+                    </row>
+                    <row id="4573">
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <cell id="4574">
+                            <property name="paddingTop">1pt</property>
+                            <text id="4575">
+                                <property name="contentType">auto</property>
+                            </text>
+                        </cell>
+                    </row>
+                </grid>
+            </page-header>
+            <page-footer>
+                <grid id="1387">
+                    <property name="fontFamily">"Arial"</property>
+                    <property name="width">100%</property>
+                    <column id="1406">
+                        <property name="width">33%</property>
+                    </column>
+                    <column id="1388">
+                        <property name="width">33%</property>
+                    </column>
+                    <column id="1389">
+                        <property name="width">1.5cm</property>
+                    </column>
+                    <column id="1408">
+                        <property name="width">3cm</property>
+                    </column>
+                    <row id="1390">
+                        <property name="borderTopColor">#000000</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">thin</property>
+                        <cell id="1405">
+                            <property name="verticalAlign">middle</property>
+                            <text id="2360">
+                                <property name="fontFamily">"Arial"</property>
+                                <property name="fontSize">medium</property>
+                                <property name="marginTop">0pt</property>
+                                <property name="textAlign">left</property>
+                                <property name="contentType">html</property>
+                                <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                            </text>
+                        </cell>
+                        <cell id="1391">
+                            <property name="verticalAlign">middle</property>
+                        </cell>
+                        <cell id="1392">
+                            <property name="verticalAlign">middle</property>
+                            <text-data id="1404">
+                                <property name="fontFamily">"Arial"</property>
+                                <property name="fontSize">medium</property>
+                                <property name="fontWeight">bold</property>
+                                <property name="textAlign">left</property>
+                                <expression name="valueExpr">"Página: "</expression>
+                                <property name="contentType">html</property>
+                            </text-data>
+                        </cell>
+                        <cell id="1407">
+                            <property name="paddingTop">1pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="verticalAlign">middle</property>
+                            <grid id="4263">
+                                <property name="width">100%</property>
+                                <column id="4275">
+                                    <property name="width">0.5cm</property>
+                                </column>
+                                <column id="4264"/>
+                                <column id="4265">
+                                    <property name="width">0.5cm</property>
+                                </column>
+                                <column id="4266"/>
+                                <row id="4267">
+                                    <cell id="4274">
+                                        <label id="4276">
+                                            <property name="textAlign">center</property>
+                                            <text-property name="text">Nº</text-property>
+                                        </label>
+                                    </cell>
+                                    <cell id="4268">
+                                        <auto-text id="4269">
+                                            <property name="textAlign">center</property>
+                                            <property name="type">page-number</property>
+                                        </auto-text>
+                                    </cell>
+                                    <cell id="4270">
+                                        <text id="4271">
+                                            <property name="textAlign">center</property>
+                                            <property name="contentType">plain</property>
+                                            <text-property name="content"><![CDATA[de]]></text-property>
+                                        </text>
+                                    </cell>
+                                    <cell id="4272">
+                                        <auto-text id="4273">
+                                            <property name="textAlign">center</property>
+                                            <property name="type">total-page</property>
+                                        </auto-text>
+                                    </cell>
+                                </row>
+                            </grid>
+                        </cell>
+                    </row>
+                </grid>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="4454">
+            <property name="fontFamily">"Arial"</property>
+            <property name="width">100%</property>
+            <property name="dataSet">ExpedientesDS</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">ORG_NOMBRE</property>
+                    <expression name="expression">dataSetRow["ORG_NOMBRE"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">NRO_NUMERO</property>
+                    <expression name="expression">dataSetRow["NRO_NUMERO"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">EXP_CARATULA</property>
+                    <expression name="expression">'Carátula: '+dataSetRow["EXP_CARATULA"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">ESTADO</property>
+                    <expression name="expression">dataSetRow["ESTADO"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">EXP_FECHA_INICIO</property>
+                    <expression name="expression">dataSetRow["EXP_FECHA_INICIO"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">EXP_ID</property>
+                    <expression name="expression">'*'+dataSetRow["EXP_ID"]+'*'</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">ORG_ID</property>
+                    <expression name="expression">dataSetRow["ORG_ID"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">EXP_CUIJ</property>
+                    <expression name="expression">'Expte: '+dataSetRow["EXP_CUIJ"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">EXP_SUFIJO</property>
+                    <expression name="expression">dataSetRow["EXP_SUFIJO"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">NRO_ANIO</property>
+                    <expression name="expression">dataSetRow["NRO_ANIO"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">NRO_BIS</property>
+                    <expression name="expression">dataSetRow["NRO_BIS"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">EXPEDIENTE</property>
+                    <expression name="expression">dataSetRow["EXPEDIENTE"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">FECHA_ACTUALIZACION</property>
+                    <expression name="expression">dataSetRow["FECHA_ACTUALIZACION"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">EXP_FECHA_INICIO_S</property>
+                    <expression name="expression">dataSetRow["EXP_FECHA_INICIO_S"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">LOC_DESCR</property>
+                    <property name="displayName">LOC_DESCR</property>
+                    <expression name="expression">dataSetRow["LOC_DESCR"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="4518"/>
+            <column id="4541"/>
+            <detail>
+                <row id="4480">
+                    <cell id="4481">
+                        <grid id="4551">
+                            <property name="width">100%</property>
+                            <column id="4552">
+                                <property name="width">1.03125in</property>
+                            </column>
+                            <column id="4553"/>
+                            <row id="4554">
+                                <cell id="4555">
+                                    <text id="4557">
+                                        <property name="contentType">auto</property>
+                                        <text-property name="content"><![CDATA[Código de Barra:]]></text-property>
+                                    </text>
+                                </cell>
+                                <cell id="4556">
+                                    <data id="4558">
+                                        <property name="fontFamily">"39251"</property>
+                                        <property name="fontSize">14pt</property>
+                                        <property name="fontWeight">normal</property>
+                                        <property name="marginTop">0pt</property>
+                                        <property name="paddingTop">1pt</property>
+                                        <property name="resultSetColumn">EXP_ID</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </grid>
+                    </cell>
+                    <cell id="4536">
+                        <data id="4546">
+                            <property name="resultSetColumn">EXP_CUIJ</property>
+                        </data>
+                    </cell>
+                </row>
+                <row id="4530">
+                    <cell id="4531">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <data id="4542">
+                            <property name="resultSetColumn">EXP_CARATULA</property>
+                        </data>
+                    </cell>
+                </row>
+                <row id="4532">
+                    <cell id="4533">
+                        <text id="4543">
+                            <property name="contentType">html</property>
+                            <text-property name="content"><![CDATA[<VALUE-OF>if(row["EXP_FECHA_INICIO_S"]!=null)
+'Fecha de Inicio: '+row["EXP_FECHA_INICIO_S"];
+else
+'Fecha de Inicio: '</VALUE-OF>]]></text-property>
+                        </text>
+                    </cell>
+                    <cell id="4538">
+                        <text id="4544">
+                            <property name="contentType">html</property>
+                            <text-property name="content"><![CDATA[<VALUE-OF>if(row["FECHA_ACTUALIZACION"]!=null)
+'Última actualización del expte al.: '+row["FECHA_ACTUALIZACION"]
+else
+'Última actualización del expte al.: '</VALUE-OF>]]></text-property>
+                        </text>
+                    </cell>
+                </row>
+                <row id="4534">
+                    <property name="borderBottomColor">#000000</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">thin</property>
+                    <cell id="4535">
+                        <property name="colSpan">2</property>
+                        <property name="rowSpan">1</property>
+                        <text id="4545">
+                            <property name="contentType">html</property>
+                            <text-property name="content"><![CDATA[<VALUE-OF>function mostrarRad(){
+var rad='Radicación Actual: ';
+if(row["ORG_NOMBRE"]!=null){
+  rad+=row["ORG_NOMBRE"];
+}
+
+if(row["LOC_DESCR"]!=null){
+rad+=' - '+row["LOC_DESCR"];
+}
+return rad;
+}mostrarRad();</VALUE-OF>]]></text-property>
+                        </text>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="4505">
+                    <cell id="4506"/>
+                    <cell id="4540"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>
