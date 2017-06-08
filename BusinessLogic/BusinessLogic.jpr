@@ -1,0 +1,518 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jpr:project xmlns:jpr="http://xmlns.oracle.com/ide/project">
+   <hash n="component-versions">
+      <value n="oracle.adf.dt.migration.ProjectMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.adfdt.controller.jsf.addin.JSFProjectMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.adfdt.controller.struts.addin.db.ADFStrutsProjectMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.adfdt.controller.struts.addin.StrutsProjectMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.adfdtinternal.model.portlet.migration.WebCenterProjectMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.adfdtinternal.view.faces.addin.ADFFacesLibraryMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.bm.commonIde.ProjectUpgrader" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.ide.model.Project" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.ide.model.ResourcePathsMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.jbo.dt.jclient.migrator.JCProjectMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.jbo.dt.jdevx.ui.appnav.APProjectMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.jdeveloper.dbmodeler.migration.ProjectMigratorHelper" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.jdeveloper.ejb.EjbMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.jdeveloper.offlinedb.migration.OfflineDBProjectMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.jdevimpl.jsp.JsfLibraryMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.jdevimpl.jsp.JspMigrator" v="10.1.3.1.0"/>
+      <value n="oracle.jdevimpl.runner.RunConfigurationsMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.jdevimpl.webservices.WebServicesMigratorHelper" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.tip.tools.ide.pm.addin.PMProjectMigrator" v="10.1.3.3.0;10.1.3.5.0"/>
+      <value n="oracle.toplink.addin.migration.TopLinkProjectMigrator" v="10.1.3.1.0"/>
+   </hash>
+   <list n="contentSets">
+      <string v="oracle.jdeveloper.model.PathsConfiguration/javaContentSet"/>
+      <string v="oracle.ide.model.ResourcePaths/resourcesContentSet"/>
+      <string v="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings/offlineDBContentSet"/>
+      <string v="oracle.jdeveloper.model.J2eeSettings/webContentSet"/>
+      <string v="oracle.toplink.addin.TopLinkProjectSettings/toplinkContentSet"/>
+      <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
+      <string v="oracle.tip.tools.ide.pm.addin.PMProjectSettings/Integration_Content"/>
+   </list>
+   <value n="defaultPackage" v="com.unitech.ge.model"/>
+   <hash n="ejbModuleContainer">
+      <value n="ejbVersion" v="NOT SPECIFIED"/>
+   </hash>
+   <value n="jbo.JboProject" v="BusinessLogic"/>
+   <value n="JboProject" v="true"/>
+   <hash n="oracle.bm.commonIde.data.project.ModelerProjectSettings">
+      <hash n="modelersContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="model/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.ide.model.DependencyConfiguration">
+      <list n="dependencyList">
+         <hash>
+            <value n="class" v="oracle.jdeveloper.library.ProjectLibrary"/>
+            <url n="sourceOwnerURL" path="../GE_INTERNET.jws"/>
+            <url n="sourceURL" path="BusinessLogic.jpr"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.ide.model.ResourcePaths">
+      <hash n="resourcesContentSet">
+         <list n="constituent-sets">
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="."/>
+               </list>
+            </hash>
+            <hash>
+               <list n="pattern-filters"/>
+               <list n="url-path">
+                  <url path="../UserInterface/public_html/"/>
+               </list>
+            </hash>
+         </list>
+         <list n="url-path"/>
+      </hash>
+   </hash>
+   <hash n="oracle.ide.model.TechnologyScopeConfiguration">
+      <list n="technologyScope">
+         <string v="Java"/>
+         <string v="ADFbc"/>
+         <string v="General"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
+      <list n="copyRes">
+         <string v=".gif"/>
+         <string v=".jpg"/>
+         <string v=".jpeg"/>
+         <string v=".png"/>
+         <string v=".properties"/>
+         <string v=".xml"/>
+         <string v="-apf.xml"/>
+         <string v=".ejx"/>
+         <string v=".xcfg"/>
+         <string v=".cpx"/>
+         <string v=".dcx"/>
+         <string v=".wsdl"/>
+         <string v=".ini"/>
+         <string v=".tld"/>
+         <string v=".tag"/>
+         <string v=".jpx"/>
+      </list>
+      <value n="internalEncoding" v="Cp1252"/>
+   </hash>
+   <hash n="oracle.jdeveloper.model.J2eeSettings">
+      <value n="j2eeWebAppName" v="GE_INTERNET-BusinessLogic-webapp"/>
+      <value n="j2eeWebContextRoot" v="GE_INTERNET-BusinessLogic-context-root"/>
+      <hash n="webContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="public_html/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="javaContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="src/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings">
+      <hash n="offlineDBContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="database/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <value n="custom" v="false"/>
+            <value n="name" v="Default"/>
+         </hash>
+      </hash>
+      <list n="runConfigurationList">
+         <string v="Default"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences">
+         <hash>
+            <value n="id" v="BC4J Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Model Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Tester"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle JDBC"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Oracle Domains"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Security"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle Java Object Cache"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Birt"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="OpenOffice"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ReportWSClient"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Log4J"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <hash n="internalDefinitions">
+         <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url path="../../ge-lib/report-ws-client/axis.jar" jar-entry=""/>
+                  <url path="../../ge-lib/report-ws-client/commons-discovery-0.2.jar" jar-entry=""/>
+                  <url path="../../ge-lib/report-ws-client/javax.wsdl_1.6.2.v201005080631.jar" jar-entry=""/>
+                  <url path="../../ge-lib/report-ws-client/jaxrpc.jar" jar-entry=""/>
+                  <url path="../../ge-lib/report-ws-client/org.apache.commons.logging_1.0.4.v201005080501.jar" jar-entry=""/>
+                  <url path="../../ge-lib/report-ws-client/report-client.jar" jar-entry=""/>
+                  <url path="../../ge-lib/report-ws-client/report-ws-client-1.0.1.jar" jar-entry=""/>
+                  <url path="../../ge-lib/report-ws-client/saaj.jar" jar-entry=""/>
+               </list>
+               <value n="description" v="ReportWSClient"/>
+               <value n="id" v="ReportWSClient"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../ge-lib/log4j/log4j-1.2.16.jar" jar-entry=""/>
+                  <url path="../../ge-lib/log4j/slf4j-api-1.6.2.jar" jar-entry=""/>
+                  <url path="../../ge-lib/log4j/slf4j-log4j12-1.6.2.jar" jar-entry=""/>
+               </list>
+               <value n="description" v="Log4J"/>
+               <value n="id" v="Log4J"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../ge-lib/birt/chartengineapi.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/com.ibm.icu_3.6.1.v20070906.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/commons-cli-1.0.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/coreapi.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/dataadapterapi.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/dteapi.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/engineapi.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/flute.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/js.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/modelapi.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/modelodaapi.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/odadesignapi.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/org.apache.commons.codec_1.3.0.v200706111738.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/org.eclipse.emf.common_2.2.1.v200702131851.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/org.eclipse.emf.ecore.xmi_2.2.2.v200702131851.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/org.eclipse.emf.ecore_2.2.2.v200702131851.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/org.w3c.css.sac_1.3.0.v200706111724.jar" jar-entry=""/>
+                  <url path="../../ge-lib/birt/scriptapi.jar" jar-entry=""/>
+               </list>
+               <value n="description" v="Birt"/>
+               <value n="id" v="Birt"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../ge-lib/openoffice/commons-io-1.2.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/commons-logging-1.1.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/freemarker-2.3.8.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/jodconverter-2.2.2.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/jooreports-2.0.0.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/log4j-1.2.16.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/openoffice-juh-2.0.3.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/openoffice-jurt-2.0.3.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/openoffice-ridl-2.0.3.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/openoffice-sandbox-2.0.3.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/openoffice-unoil-2.0.3.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/ridl-3.1.0.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/slf4j-api-1.6.2.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/slf4j-log4j12-1.6.2.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/unoil-3.1.0.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/xom-1.1.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/xpp3-1.1.3_8.jar" jar-entry=""/>
+                  <url path="../../ge-lib/openoffice/xstream-1.1.3.jar" jar-entry=""/>
+               </list>
+               <value n="description" v="OpenOffice"/>
+               <value n="id" v="OpenOffice"/>
+            </hash>
+         </list>
+      </hash>
+      <list n="libraryReferences">
+         <hash>
+            <value n="id" v="BC4J Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ADF Model Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Tester"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle JDBC"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Oracle Domains"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Security"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle Java Object Cache"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Birt"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="OpenOffice"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="ReportWSClient"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Log4J"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectPaths">
+      <url n="outputDirectory" path="../../GE_INTERNET_OUTPUT/BusinessLogic/classes/"/>
+   </hash>
+   <hash n="oracle.tip.tools.ide.pm.addin.PMProjectSettings">
+      <hash n="Integration_Content">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.toplink.addin.TopLinkProjectSettings">
+      <hash n="toplinkContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="toplink/"/>
+         </list>
+      </hash>
+   </hash>
+   <list n="ownerMap">
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/CommonService.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/ContextService.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/Accion.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/AccionesView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/AccionMnuItemFkAssoc.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/AccionView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/Configuracion.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/ConfiguracionView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/InfUso.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/InfUsoView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/Menu.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/MnuAcc.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/MnuAccAccionFkAssoc.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/MnuItem.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/MnuItemMenuFkAssoc.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/MnuItemView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/Organismo.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/OrganismoConfiguracionFkAssoc.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/OrganismoConfiguracionFkLink.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/OrganismoView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/OrgUsu.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/OrgUsuView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/Preferencia.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/Rol.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/RolView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/UsuAcc.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/UsuAccAccionFkAssoc.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/UsuAccView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/Usuario.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/UsuarioOrganismo.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/UsuarioOrganismoLink.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/UsuarioView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/MenuService.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/AccionesFrecuentesView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/AccionesRecientesView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/Menu.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/MenuView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/MenuView1.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/UiAccionView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/InternetService.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ActuacionView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/AdjuntoCargoView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/BusquedaView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/CargoView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/CompetenciaView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ConfiguracionView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ExpedienteView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ExpNumeroView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/FichaView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/LocalidadView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/NovedadesBlobView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/NovedadesView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/OrganismoEquivView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/OrganismoView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ParteView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ProvinciaView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/RepresentanteView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/SecretariaView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/Modelo.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/ModeloAuxView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/ModeloView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/NotificacionProfesional.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/NotificacionProfesionalView.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/NotificacionProfesionalView1.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.JdvXmlNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/NotificacionService.xml"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.ui.JdxXcfgNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/common/bc4j.xcfg"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.ui.JdxXcfgNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/common/bc4j.xcfg"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.ui.JdxXcfgNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/common/bc4j.xcfg"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.ui.JdxXcfgNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/common/bc4j.xcfg"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.ui.JdxXcfgNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/common/bc4j.xcfg"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.ui.JdxXcfgNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/common/bc4j.xcfg"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.ui.JdxXcfgNode"/><url n="nodeURL" path="src/com/unitech/ge/log/common/bc4j.xcfg"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jbo.dt.jdevx.ui.JdxXcfgNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/common/bc4j.xcfg"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/CommonServiceImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/client/ContextServiceClient.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/common/ContextService.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/ContextServiceImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/AccionesViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/AccionesViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/AccionImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/AccionViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/AccionViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/common/UsuarioImplMsgBundle.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/ConfiguracionImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/ConfiguracionViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/InfUsoImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/InfUsoViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/InfUsoViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/MenuImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/MnuAccImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/MnuItemImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/MnuItemViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/MnuItemViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/OrganismoImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/OrganismoViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/OrgUsuImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/OrgUsuViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/OrgUsuViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/PreferenciaImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/RolImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/RolViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/RolViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/UsuAccImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/UsuAccViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/UsuAccViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/UsuarioImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/UsuarioViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/context/model/UsuarioViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/client/MenuServiceClient.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/common/MenuService.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/MenuServiceImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/AccionesFrecuentesViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/AccionesFrecuentesViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/AccionesRecientesViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/MenuImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/MenuView1Impl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/MenuViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/MenuViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/UiAccionViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/framework/menu/model/UiAccionViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/client/InternetServiceClient.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/common/InternetService.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/InternetServiceImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ActuacionViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ActuacionViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/AdjuntoCargoViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/AdjuntoCargoViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/BusquedaViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/BusquedaViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/CargoViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/CargoViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/common/AdjuntoCargoViewRowImplMsgBundle.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/common/BusquedaViewRowImplMsgBundle.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/common/FichaViewRowImplMsgBundle.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/common/NovedadesViewRowImplMsgBundle.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/CompetenciaViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/CompetenciaViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ConfiguracionViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ConfiguracionViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ExpedienteViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ExpedienteViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ExpNumeroViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ExpNumeroViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/FichaViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/FichaViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/LocalidadViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/LocalidadViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/NovedadesBlobViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/NovedadesBlobViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/NovedadesViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/NovedadesViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/OrganismoEquivViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/OrganismoEquivViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/OrganismoViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/OrganismoViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ParteViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ParteViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ProvinciaViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/ProvinciaViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/RepresentanteViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/RepresentanteViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/SecretariaViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/internet/model/SecretariaViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/client/NotificacionServiceClient.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/common/NotificacionService.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/ModeloAuxViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/ModeloAuxViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/ModeloImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/ModeloViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/ModeloViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/NotificacionProfesionalImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/NotificacionProfesionalView1Impl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/NotificacionProfesionalView1RowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/NotificacionProfesionalViewImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/model/NotificacionProfesionalViewRowImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+      <hash><value n="nodeClass" v="oracle.jdeveloper.model.JavaSourceNode"/><url n="nodeURL" path="src/com/unitech/ge/notificacion/NotificacionServiceImpl.java"/><value n="ownerClass" v="oracle.jbo.dt.jdevx.ui.JdxAppNode"/><url n="ownerURL" path="src/BusinessLogic.jpx"/></hash>
+   </list>
+</jpr:project>

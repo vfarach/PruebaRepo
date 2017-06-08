@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+
+<JboProject
+   Name="BusinessLogic"
+   SeparateXMLFiles="true"
+   PackageName="" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_NamedConnection" Value="ge_internet" />
+      <Attr Name="_copyPkgXML" Value="false" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+      <Attr Name="_appModuleNames5" Value="com.unitech.ge.notificacion.NotificacionService" />
+      <Attr Name="_appModuleNames4" Value="com.unitech.ge.framework.CommonService" />
+      <Attr Name="_appModuleNames3" Value="com.unitech.ge.log.LogService" />
+      <Attr Name="_appModuleNames2" Value="com.unitech.ge.internet.InternetService" />
+      <Attr Name="_jprName" Value="../BusinessLogic.jpr" />
+      <Attr Name="_appModuleNames1" Value="com.unitech.ge.framework.menu.MenuService" />
+      <Attr Name="_appModuleNames0" Value="com.unitech.ge.framework.context.ContextService" />
+   </DesignTime>
+   <Containee
+      Name="context"
+      FullName="com.unitech.ge.framework.context.context"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="model"
+      FullName="com.unitech.ge.framework.context.model.model"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="framework"
+      FullName="com.unitech.ge.framework.framework"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="menu"
+      FullName="com.unitech.ge.framework.menu.menu"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="model"
+      FullName="com.unitech.ge.framework.menu.model.model"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="internet"
+      FullName="com.unitech.ge.internet.internet"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="model"
+      FullName="com.unitech.ge.internet.model.model"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="log"
+      FullName="com.unitech.ge.log.log"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="model"
+      FullName="com.unitech.ge.log.model.model"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="model"
+      FullName="com.unitech.ge.notificacion.model.model"
+      ObjectType="JboPackage" >
+   </Containee>
+   <Containee
+      Name="notificacion"
+      FullName="com.unitech.ge.notificacion.notificacion"
+      ObjectType="JboPackage" >
+   </Containee>
+</JboProject>
