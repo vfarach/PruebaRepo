@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+
+<!-- ================================================================================================================================================ -->
+<!-- http://www.allapplabs.com/log4j/log4j_levels.htm                                                                                                 -->
+<!-- 		static Level DEBUG - The DEBUG Level designates fine-grained informational events that are most useful to debug an application.       -->
+<!-- 		static Level INFO - The INFO level designates informational messages that highlight the progress of the application at coarse-grained level. -->
+<!-- 		static Level WARN - The WARN level designates potentially harmful situations.                                                         -->
+<!-- 		static Level ERROR - The ERROR level designates error events that might still allow the application to continue running.              -->
+<!-- 		static Level FATAL - The FATAL level designates very severe error events that will presumably lead the application to abort.          -->
+<!-- ================================================================================================================================================ -->
+ 
+<log4j:configuration xmlns:log4j="http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+
+    <!-- ================================= -->
+    <!-- Append messages to the console -->
+    <!-- ================================= -->
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+            <param name="Target" value="System.out" />
+            <layout class="org.apache.log4j.PatternLayout">
+                    <param name="ConversionPattern"
+                            value="%d{dd/MM/yyyy HH:mm:ss.SSS} %-5p [%t] [%c:%L] %m%n" />
+            </layout>
+    </appender>
+    
+    <!-- ============================== -->
+    <!-- Preserve messages in a local file -->
+    <!-- ============================== -->
+    <appender name="FILE" class="org.apache.log4j.DailyRollingFileAppender">
+            <param name="File" value="/u01/oracle/product/10.1.3.1/OracleAS_1/j2ee/home/application-deployments/GE_INTERNET/home_default_group_1/application.log" />
+            <param name="DatePattern" value=".yyyy-MM-dd" />
+            <layout class="org.apache.log4j.PatternLayout">
+                    <param name="ConversionPattern"
+                            value="%d{dd/MM/yyyy HH:mm:ss.SSS} %-5p [%t] [%c:%L] %m%n" />
+            </layout>
+    </appender>
+
+    <!-- ================ -->
+    <!-- Limit categories -->
+    <!-- ================ -->    
+    <category name="com.unitech.ge"> <!-- Las clases de los paquetes com.unitech las loguea con nivel Debug -->
+      <priority value="INFO"/>
+    </category>       
+    
+    <!--
+    Con estas dos categorias: Loguea com.unitech en DEBUG, 
+    con excepción de com.unitech.cas que lo hace en nivel WARNING.
+    <category name="com.unitech">
+      <priority value="DEBUG"/>
+    </category>         
+    <category name="com.unitech.cas">
+      <priority value="WARN"/>
+    </category>     
+    -->
+    
+    <!-- ======================= -->
+    <!-- Setup the Root category -->
+    <!-- ======================= -->
+    <root>
+        <level value="ERROR" /> <!-- Loguea en generar los errores -->
+        <appender-ref ref="FILE" />
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+</log4j:configuration>
